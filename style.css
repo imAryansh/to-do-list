@@ -62,7 +62,7 @@ ul li{
     padding:12px 8px 12px 50px;
     user-select:none;
     cursor:pointer;
-    //margin:100px;
+    /* margin:100px; */
     position:relative;
 }
 ul li::before{
