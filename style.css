@@ -21,7 +21,7 @@
     color:#002765;
     display:flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 20px;
 }
 .todo-app h2 img{
@@ -31,14 +31,15 @@ margin-left:10px;
 .row{
     display:flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
     background: #edeef0;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
 }
 input{
-    flex:0;
+    flex:1;
     border:none;
     outline:none;
     background: transparent;
@@ -56,12 +57,13 @@ button{
     border-radius: 40px;
 }
 ul li{
-    list-style-type: none;
+    list-style: none;
     font-size:17px;
     padding:12px 8px 12px 50px;
     user-select:none;
     cursor:pointer;
-    margin:100px;
+    //margin:100px;
+    position:relative;
 }
 ul li::before{
     content:'';
@@ -72,6 +74,8 @@ ul li::before{
     background-image: url('images/unchecked.png');
     background-size: cover;
     background-position: center;
+    top:12px;
+    left:8px;
 }
 ul li.checked{
     color:#555;
@@ -80,10 +84,11 @@ ul li.checked{
 ul li.checked::before{
 background-image: url('images/checked.png');
 }
+
 ul li span{
 position:absolute;
-/* right:0;
-top:5px; */
+right:0;
+top:5px;
 width:40px;
 height:40px;
 font-size:22px;
@@ -94,4 +99,4 @@ border-radius: 50%;
 }
 ul li span:hover{
     background: #edeef0;
-}
+} 
